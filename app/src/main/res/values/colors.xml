@@ -24,4 +24,7 @@
     <color name="black_80">#cc000000</color>
     <color name="black_70">#b3000000</color>
     <color name="black_30">#4d000000</color>
+    <color name="sunflower_yellow">#ffe100</color>
+    <color name="greyish">#a8a8a8</color>
+    <color name="black_16">#29000000</color>
 </resources>

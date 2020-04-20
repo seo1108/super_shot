@@ -21,26 +21,87 @@
 
             <ImageView
                 android:id="@+id/iv_logo"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_weight="1"
                 android:src="@drawable/logo_2" />
 
-            <ImageView
-                android:id="@+id/iv_cash"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/cash" />
+                android:gravity="right">
 
-            <ImageView
-                android:id="@+id/iv_alarm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/alarm" />
+                <ImageView
+                    android:id="@+id/iv_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/cash" />
+
+                <ImageView
+                    android:id="@+id/iv_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alarm" />
+            </LinearLayout>
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/apple"
+                android:lineSpacingExtra="-3sp"
+                android:background="@drawable/underline_apple_1"
+                android:gravity="center_horizontal"
+                android:text="@string/ss_string_042"
+                android:fontFamily="@font/sans_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/brown_grey"
+                android:lineSpacingExtra="-3sp"
+                android:gravity="center_horizontal"
+                android:text="@string/ss_string_043"
+                android:fontFamily="@font/sans_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/brown_grey"
+                android:lineSpacingExtra="-3sp"
+                android:gravity="center_horizontal"
+                android:text="@string/ss_string_044"
+                android:fontFamily="@font/sans_regular" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
 
     </LinearLayout>
 

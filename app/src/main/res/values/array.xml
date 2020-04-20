@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gametype">
+        <item>스킨스</item>
+        <item>스트로크</item>
+        <item>조폭 스트로크</item>
+        <item>매치</item>
+        <item>명랑</item>
+        <item>랜텀 스트로크 (팀전)</item>
+        <item>고정 스트로크 (팀전)</item>
+        <item>스크래치</item>
+    </string-array>
+</resources>

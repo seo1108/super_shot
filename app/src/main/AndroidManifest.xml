@@ -71,6 +71,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent">
         </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.GameTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>
