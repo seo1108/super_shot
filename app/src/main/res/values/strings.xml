@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">supershot</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="kakao_app_key">513271bb6e749d58f32f645d4da3278b</string>
+
+    <string name="ss_string_001">돈버는 스코어 카드</string>
+    <string name="ss_string_002">회원가입</string>
+    <string name="ss_string_003">아이디를 입력하세요</string>
+    <string name="ss_string_004">중복확인</string>
+    <string name="ss_string_005">아이디가 중복되었습니다.</string>
+    <string name="ss_string_006">실명을 입력하세요</string>
+    <string name="ss_string_007">실명을 등록하세요.</string>
+    <string name="ss_string_008">핸드폰 번호를 등록하세요(‘-‘제외)</string>
+    <string name="ss_string_009">인증번호 전송</string>
+    <string name="ss_string_010">인증번호를 입력하세요</string>
+    <string name="ss_string_011">성별을 선택하세요</string>
+    <string name="ss_string_012">등급을 선택하세요</string>
+    <string name="ss_string_013">친구추천 아이디를 입력하세요</string>
+    <string name="ss_string_014">[필수]</string>
+    <string name="ss_string_015">서비스 이용약관 동의</string>
+    <string name="ss_string_016">개인정보 수집 및 이용동의</string>
+    <string name="ss_string_017">확인</string>
+    <string name="ss_string_018">회원가입 완료</string>
+    <string name="ss_string_019">회원가입을 축하드립니다!\n가입 축하기념으로\n50,000 슈퍼캐시를 받으셨습니다!</string>
+    <string name="ss_string_020">기업이나 단체 가입은 아래 버튼을 클릭하세요.</string>
+    <string name="ss_string_021">기업/단체가입</string>
+    <string name="ss_string_022">회원정보 동기화</string>
+    <string name="ss_string_023">%1$s님의 전화번호와\n이메일주소가 중복됨을 확인했습니다.</string>
+    <string name="ss_string_024">기존사용자 정보를 복원하시겠습니까?</string>
+    <string name="ss_string_025">기업(단체) 회원가입</string>
+    <string name="ss_string_026">단체구분을 선택하세요</string>
+    <string name="ss_string_027">회사명 또는 단체명을 입력하세요</string>
+    <string name="ss_string_028">골프장을 선택하세요</string>
+    <string name="ss_string_029">대표자명을 입력하세요</string>
+    <string name="ss_string_030">사업자번호를 입력하세요</string>
+    <string name="ss_string_031">대표전화를 입력하세요</string>
+    <string name="ss_string_032">홈페이지주소를 입력하세요</string>
+    <string name="ss_string_033">주소를 입력하세요(골프장,개인기업,법인기업인 경우)</string>
+    <string name="ss_string_034">회원가입을 축하드립니다!</string>
+    <string name="ss_string_035">%1$s님이 등록한 사업자정보가\n사업자명으로 등록되어 있습니다.</string>
+    <string name="ss_string_036">확인 후 재가입하세요.</string>
+    <string name="ss_string_037">기업회원 중복</string>
+    <string name="ss_string_038">게임기록 동기화</string>
+    <string name="ss_string_039">%1$s님과 %2$s\n%3$s 골프장에서\n게임을 하셨나요?</string>
+    <string name="ss_string_040">확인버튼을 클릭하시면\n게임기록이 동기화됩니다.</string>
+    <string name="ss_string_041">아니요</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_80"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="137dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ico_close" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_top_r15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/sans_bold"
+                android:text="@string/ss_string_015"
+                android:textColor="@color/black_two" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/sans_regular"
+                android:textColor="@color/brownish_grey"
+                android:text="본 이용 약관에 따라 귀하와 ‘슈퍼샷’ 간의 계약('계약')이 체결됩니다. 계약을 주의해서 읽어 보시기 바랍니다. 계약 내용을 이해하고 승인함을 확인하려면 '동의'를 클릭하십시오.
+\n\nA. 슈퍼샷 서비스 소개
+\n\n본 계약은 귀하의 슈퍼샷 서비스('서비스') 사용을 규율합니다. 본 서비스를 통해 귀하는 콘텐츠, 앱('앱') 및 기타 앱 내 서비스(집합적으로 '콘텐츠')를 구입, 획득, 사용 허가, 대여 또는 구독할 수 있습니다. 콘텐츠는 슈퍼샷 또는 제3자에 의하여 서비스를 통하여 제공될 수 있습니다. 대한민국에서 서비스를 사용하기 위해 계정을 생성하면 대한민국을 세금 정산을 위한 귀하의 거주 국가로 지정하는 것입니다. 슈퍼샷 서비스는 귀하의 거주 국가('본국')에서 사용할 수 있습니다. 귀하는 슈퍼샷 서비스를 사용하려면 호환되는 하드웨어 및 소프트웨어(최신 버전 권장 또는 필수)와 함께 인터넷 연결(요금이 부과될 수 있음)이 필요합니다. 슈퍼샷 서비스의 성능은 이러한 요인에 영향을 받을 수 있습니다. 본 서비스를 통해 귀하는 콘텐츠, 앱(‘앱’) 및 기타 앱 내 서비스(집합적으로 ‘콘텐츠’)를 구입, 획득, 사용 허가, 대여 또는 구독할 수 있습니다. 콘텐츠는 슈퍼샷 또는 제3자에 의하여 서비스를 통하여 제공될 수 있습니다. 대한민국에서 서비스를 사용하기 위해 계정을 생성하면 대한민국을 세금 정산을 위한 귀하의 거주 국가로 지정하는 것입니다. 슈퍼샷 서비스는 귀하의 거주 국가(‘본국’)에서 사용할 수 있습니다. 귀하는 슈퍼샷 서비스를 사용하려면 호환되는 하드웨어 및 소프트웨어(최신 버전 권장 또는 필수)와 함께 인터넷 연결(요금이 부과될 수 있음)이 필요합니다. 슈퍼샷 서비스의 성능은 이러한 요인에 영향을 받을 수 있습니다.
+"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                app:cardBackgroundColor="@color/apple"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="6dp"
+                app:cardCornerRadius="25dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="@string/ss_string_017"
+                    android:textColor="@color/white_two"
+                    android:fontFamily="@font/sans_regular"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>
