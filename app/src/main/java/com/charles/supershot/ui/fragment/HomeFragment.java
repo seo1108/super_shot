@@ -20,6 +20,8 @@ import com.charles.supershot.R;
 import com.charles.supershot.rest.model.SliderItem;
 import com.charles.supershot.ui.BaseActivity;
 import com.charles.supershot.ui.GameTypeActivity;
+import com.charles.supershot.ui.SettingRounderActivity;
+import com.charles.supershot.ui.SettingTeamActivity;
 import com.charles.supershot.ui.adapter.SliderAdapter;
 import com.charles.supershot.utils.LogUtils;
 import com.smarteist.autoimageslider.SliderView;
@@ -68,7 +70,8 @@ public class HomeFragment extends BaseFragment {
         cv_start_game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mActivity.callActivity(GameTypeActivity.class, false);
+                //mActivity.callActivity(GameTypeActivity.class, false);
+                mActivity.callActivity(SettingTeamActivity.class, false);
             }
         });
     }
