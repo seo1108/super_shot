@@ -82,4 +82,7 @@
     <string name="ss_string_076">싱글플레이, 멀티플레이, 랜덤플레이 등 다양한 방식으로 신나게 즐겨보세요.</string>
     <string name="ss_string_077">보너스 옵션</string>
     <string name="ss_string_078">게임을 모두 마치시면 슈퍼샷 캐시를 보너스로 드립니다.</string>
+
+    <string name="ss_string_300">핸디캡 %1$s</string>
+    <string name="ss_string_301">최신스코어</string>
 </resources>
