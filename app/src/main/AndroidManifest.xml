@@ -63,7 +63,6 @@
         </activity>
         <activity
             android:name=".ui.CompanyDupActivity"
-
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent">
         </activity>
@@ -89,6 +88,18 @@
         </activity>
         <activity
             android:name=".ui.GameOptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+        <activity
+            android:name=".ui.SettingRounderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.SettingTeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

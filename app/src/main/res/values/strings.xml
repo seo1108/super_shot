@@ -127,4 +127,19 @@
 
     <string name="ss_string_118">원</string>
 
+    <string name="ss_string_300">핸디캡 %1$s</string>
+    <string name="ss_string_301">최신스코어</string>
+    <string name="ss_string_302">동반라운더</string>
+    <string name="ss_string_303">+ 선수 추가</string>
+    <string name="ss_string_304">레드팀</string>
+    <string name="ss_string_305">블루팀</string>
+    <string name="ss_string_306">선수추가</string>
+    <string name="ss_string_307">슈퍼샷</string>
+    <string name="ss_string_308">내친구</string>
+    <string name="ss_string_309">연락처</string>
+    <string name="ss_string_310">+ 새 친구추가</string>
+    <string name="ss_string_311">새로운 친구를 추가해보세요.</string>
+    <string name="ss_string_312">새 친구추가</string>
+    <string name="ss_string_313">등록</string>
+
 </resources>
