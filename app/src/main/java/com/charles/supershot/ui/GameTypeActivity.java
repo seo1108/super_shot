@@ -23,6 +23,9 @@ import butterknife.ButterKnife;
 public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItemSelectedListener {
     private static final String TAG = ServiceAgreeActivity.class.getSimpleName();
 
+    @BindView(R.id.iv_info)
+    ImageView iv_info;
+
     @BindView(R.id.ll_game_type)
     LinearLayout ll_game_type;
 
@@ -88,6 +91,10 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
 
     @Override
     protected void attachEvents() {
+        iv_info.setOnClickListener(v->{
+            callActivity(GameGuideActivity.class, false);
+        });
+
         ll_game_type.setOnClickListener(v->{
             cv_next.setVisibility(View.GONE);
             ll_wheel.setVisibility(View.VISIBLE);

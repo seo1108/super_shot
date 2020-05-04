@@ -82,4 +82,49 @@
     <string name="ss_string_076">싱글플레이, 멀티플레이, 랜덤플레이 등 다양한 방식으로 신나게 즐겨보세요.</string>
     <string name="ss_string_077">보너스 옵션</string>
     <string name="ss_string_078">게임을 모두 마치시면 슈퍼샷 캐시를 보너스로 드립니다.</string>
+    <string name="ss_string_079">내기옵션</string>
+    <string name="ss_string_080">게임 금액을 설정하세요</string>
+    <string name="ss_string_081">9홀당 상금을 입력하세요</string>
+    <string name="ss_string_082">18홀당 상금을 입력하세요</string>
+    <string name="ss_string_083">홀당 타수차이 만큼 상금을 입력하세요</string>
+    <string name="ss_string_084">18홀당 타수차이 만큼 상금을 입력하세요</string>
+    <string name="ss_string_085">홀당 정해진 상금을 입력하세요</string>
+    <string name="ss_string_086">스코어 계산방법</string>
+    <string name="ss_string_087">스코어 계산방법을 선택하세요</string>
+    <string name="ss_string_088">배판 옵션</string>
+    <string name="ss_string_089">버디 이상</string>
+    <string name="ss_string_090">전체 인원이 동점 기록</string>
+    <string name="ss_string_091">양파 이상</string>
+    <string name="ss_string_092">트리플보기 이상 (Par 4, 5)</string>
+    <string name="ss_string_093">더블보기 이상 (Par 3)</string>
+    <string name="ss_string_094">따당 (4배판으로 계산)</string>
+    <string name="ss_string_095">이글 이상</string>
+    <string name="ss_string_096">롱기 (Par 5에서 파이상 스코어 기록)</string>
+    <string name="ss_string_097">니어 (Par 3에서 파이상 스코어 기록)</string>
+    <string name="ss_string_098">빽도 (롱기나 니어가 파를 못했을 경우, 동반자에게 니어값을 주는 것)</string>
+    <string name="ss_string_099">보너스 옵션</string>
+    <string name="ss_string_100">OECD 옵션</string>
+    <string name="ss_string_101">가입조건</string>
+    <string name="ss_string_102">6홀 이상 승리</string>
+
+    <string name="ss_string_103">오비</string>
+    <string name="ss_string_104">벙커</string>
+    <string name="ss_string_105">트리플퍼팅 이상</string>
+    <string name="ss_string_106">트리플보기 이상</string>
+    <string name="ss_string_107">해저드</string>
+    <string name="ss_string_108">카트길</string>
+    <string name="ss_string_109">나무</string>
+
+    <string name="ss_string_110">벌금 옵션</string>
+    <string name="ss_string_111">더블보기 이상</string>
+    <string name="ss_string_112">쿼드러플보기 이상</string>
+    <string name="ss_string_113">양파이상</string>
+
+    <string name="ss_string_114">배판에 해당되는 옵션을 선택하세요.</string>
+    <string name="ss_string_115">보너스 옵션을 선택하면 동반자에게 추가 상금을 받을 수 있습니다.</string>
+    <string name="ss_string_116">OECD 옵션에 해당될 경우 벌금을 내세요. 벌금은 뒤풀이 비용으로 사용하세요.</string>
+    <string name="ss_string_117">해당 옵션에 해당될 경우 벌금을 내세요. 벌금은 뒤풀이 비용으로 사용하세요.</string>
+
+    <string name="ss_string_118">원</string>
+
 </resources>

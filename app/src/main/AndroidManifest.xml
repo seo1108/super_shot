@@ -63,6 +63,7 @@
         </activity>
         <activity
             android:name=".ui.CompanyDupActivity"
+
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent">
         </activity>
@@ -78,6 +79,16 @@
         </activity>
         <activity
             android:name=".ui.GameTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.GameGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.GameOptionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
