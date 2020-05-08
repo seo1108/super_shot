@@ -127,6 +127,54 @@
 
     <string name="ss_string_118">원</string>
 
+
+
+
+    <string name="ss_string_119">전반홀이 잘 끝났네요!\n남는건 사진밖에 없습니다!</string>
+    <string name="ss_string_120">동영상</string>
+    <string name="ss_string_121">사진</string>
+    <string name="ss_string_122">후반코스를 시작합니다.\n코스 확인 후 시작하세요!</string>
+    <string name="ss_string_123">스코어 입력</string>
+    <string name="ss_string_124">선수명</string>
+    <string name="ss_string_125">To-Par</string>
+    <string name="ss_string_126">누적 총액</string>
+    <string name="ss_string_127">전반홀 결산</string>
+    <string name="ss_string_128">후반홀 시작</string>
+    <string name="ss_string_129">최종 스코어 확인</string>
+    <string name="ss_string_130">최종 스코어</string>
+    <string name="ss_string_131"></string>
+    <string name="ss_string_132"></string>
+    <string name="ss_string_133"></string>
+    <string name="ss_string_134"></string>
+    <string name="ss_string_135"></string>
+    <string name="ss_string_136"></string>
+    <string name="ss_string_137"></string>
+    <string name="ss_string_138"></string>
+    <string name="ss_string_139"></string>
+    <string name="ss_string_140"></string>
+    <string name="ss_string_141"></string>
+    <string name="ss_string_142"></string>
+    <string name="ss_string_143"></string>
+    <string name="ss_string_144"></string>
+    <string name="ss_string_145"></string>
+    <string name="ss_string_146"></string>
+    <string name="ss_string_147"></string>
+    <string name="ss_string_148"></string>
+    <string name="ss_string_149"></string>
+    <string name="ss_string_150"></string>
+    <string name="ss_string_151"></string>
+    <string name="ss_string_152"></string>
+    <string name="ss_string_153"></string>
+    <string name="ss_string_154"></string>
+    <string name="ss_string_155"></string>
+    <string name="ss_string_156"></string>
+    <string name="ss_string_157"></string>
+    <string name="ss_string_158"></string>
+    <string name="ss_string_159"></string>
+    <string name="ss_string_160"></string>
+
+
+
     <string name="ss_string_300">핸디캡 %1$s</string>
     <string name="ss_string_301">최신스코어</string>
     <string name="ss_string_302">동반라운더</string>
