@@ -143,7 +143,7 @@
     <string name="ss_string_129">최종 스코어 확인</string>
     <string name="ss_string_130">최종 스코어</string>
     <string name="ss_string_131">취소</string>
-    <string name="ss_string_132"></string>
+    <string name="ss_string_132">아니오</string>
     <string name="ss_string_133"></string>
     <string name="ss_string_134"></string>
     <string name="ss_string_135"></string>
@@ -199,5 +199,7 @@
     <string name="ss_string_321">게임 종료하기</string>
     <string name="ss_string_322">게임을 종료하시겠습니까?\n게임종료를 하시면 스코어가 기록되지\n않고 게임캐시를 받으실 수 없습니다.</string>
     <string name="ss_string_323">게임기록원을\n다른 라운더로 변경하실래요?</string>
-
+    <string name="ss_string_324">게임기록원 변경</string>
+    <string name="ss_string_325">%1$s님이\n게임기록원으로 요청하셨습니다.\n받으시겠습니까?</string>
+    <string name="ss_string_326">내기기록</string>
 </resources>
