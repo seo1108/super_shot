@@ -142,7 +142,7 @@
     <string name="ss_string_128">후반홀 시작</string>
     <string name="ss_string_129">최종 스코어 확인</string>
     <string name="ss_string_130">최종 스코어</string>
-    <string name="ss_string_131"></string>
+    <string name="ss_string_131">취소</string>
     <string name="ss_string_132"></string>
     <string name="ss_string_133"></string>
     <string name="ss_string_134"></string>
@@ -189,5 +189,15 @@
     <string name="ss_string_311">새로운 친구를 추가해보세요.</string>
     <string name="ss_string_312">새 친구추가</string>
     <string name="ss_string_313">등록</string>
+    <string name="ss_string_314">게임방식을 변경하시겠습니까?</string>
+    <string name="ss_string_315">네</string>
+    <string name="ss_string_316">상금을 변경하시겠습니까?</string>
+    <string name="ss_string_317">1만원</string>
+    <string name="ss_string_318">2만원</string>
+    <string name="ss_string_319">5만원</string>
+    <string name="ss_string_320">10만원</string>
+    <string name="ss_string_321">게임 종료하기</string>
+    <string name="ss_string_322">게임을 종료하시겠습니까?\n게임종료를 하시면 스코어가 기록되지\n않고 게임캐시를 받으실 수 없습니다.</string>
+    <string name="ss_string_323">게임기록원을\n다른 라운더로 변경하실래요?</string>
 
 </resources>
