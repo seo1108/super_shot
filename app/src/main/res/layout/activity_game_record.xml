@@ -101,6 +101,7 @@
                             android:textColor="@color/black_two"
                             android:fontFamily="@font/sans_regular"
                             android:text="캐빈전" />
+
                         <ImageView
                             android:id="@+id/iv_grade"
                             android:layout_width="wrap_content"

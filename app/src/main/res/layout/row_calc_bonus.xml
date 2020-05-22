@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/box_of_row"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="13dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_profile"
+
+                app:civ_border_color="@color/sunflower_yellow"
+                app:civ_border_width="2dp" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sans_regular"
+                android:text="캐빈전" />
+            <ImageView
+                android:id="@+id/iv_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:src="@drawable/ama_m" />
+            <TextView
+                android:id="@+id/tv_panelty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/apple"
+                android:fontFamily="@font/sans_regular"
+                android:text="OECD" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/spade" />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/sans_regular"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -2,6 +2,7 @@ package com.charles.supershot.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -137,6 +138,12 @@ public class LoginActivity extends BaseActivity {
 
                             //toast(openid + "_____" + nickname + "_____" + email);
 
+                            Log.d("SSSSSSSSSSSSS", openid + "_____" + nickname + "_____" + email);
+
+
+                            // 기가입이면 홈으로
+
+                            // 신규면 신규회원등록으로
                             callActivity(JoinPersonalActivity.class, true);
 
                             //tryKakaoLogin(openid, email, nickname);

@@ -37,7 +37,7 @@ public class SplashActivity extends BaseActivity {
                 // 다음화면으로 이동
                 //callActivity(LoginActivity.class, true);
                 //callActivity(JoinCompanyActivity.class, true);
-                callActivity(MainActivity.class, true);
+                callActivity(JoinPersonalActivity.class, true);
             }
         }, 1000);
     }
