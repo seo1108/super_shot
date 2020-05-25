@@ -10,4 +10,47 @@
         <item>고정 스트로크 (팀전)</item>
         <item>스크래치</item>
     </string-array>
+
+    <string-array name="strokes">
+        <item>스트로크</item>
+        <item>스크래치</item>
+        <item>원베스트 스코어</item>
+        <item>팀 스트로크</item>
+        <item>팀 스크래치</item>
+        <item>랜덤 스크래치</item>
+        <item>어니스트존</item>
+    </string-array>
+
+    <string-array name="skins">
+        <item>스킨스</item>>
+        <item>조폭 스킨스</item>
+        <item>꼴등 스킨스</item>
+        <item>후세인</item>
+        <item>라스베가스</item>
+        <item>신라스베가스(뽑기)</item>
+        <item>어게인스트</item>
+        <item>낫소</item>
+    </string-array>
+
+    <string-array name="match">
+        <item>포볼(베스트볼)</item>>
+        <item>포볼(스트로크)</item>
+        <item>쓰리볼(베스트볼)</item>
+        <item>포섬</item>
+        <item>쓰리섬</item>
+        <item>포섬 스크램블</item>
+    </string-array>
+
+    <string-array name="myeongrang">
+        <item>스트로크</item>>
+        <item>스크래치</item>
+        <item>팀 스트로크</item>
+        <item>팀 스크래치</item>
+        <item>랜덤 스크래치</item>
+        <item>포볼(베스트볼)</item>
+        <item>쓰리볼(베스트볼)</item>
+        <item>포섬</item>
+        <item>쓰리섬</item>
+        <item>포섬 스크램블</item>
+    </string-array>
 </resources>

@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -14,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,6 +34,8 @@ import com.charles.supershot.R;
 import com.charles.supershot.common.Const;
 import com.charles.supershot.rest.DefaultRestClient;
 import com.charles.supershot.rest.api.AuthService;
+import com.charles.supershot.rest.model.Join;
+import com.charles.supershot.rest.model.UserData;
 import com.charles.supershot.ui.adapter.AdapterSpinner;
 import com.charles.supershot.utils.LogUtils;
 import com.google.gson.JsonObject;
@@ -132,6 +136,8 @@ public class JoinPersonalActivity extends BaseActivity {
     private int mSelectItem;
     private Bitmap bitmap;
 
+    private boolean isValidCheck = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -226,7 +232,7 @@ public class JoinPersonalActivity extends BaseActivity {
         cv_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                callActivity(JoinConfirmActivity.class, false);
+                signup();
             }
         });
 
@@ -263,11 +269,17 @@ public class JoinPersonalActivity extends BaseActivity {
         showPicDialog();
     }
 
+    @OnClick(R.id.tv_id_check)
+    void onClickCheckId() {
+        validId();
+    }
+
     private void validId() {
         showSpinner();
+        //tv_id_warn.setVisibility(View.GONE);
 
         HashMap<String, Object> query = new HashMap<>();
-        query.put("userId", et_id.getText());
+        query.put("userId", et_id.getText().toString());
 
         AuthService service =
                 new DefaultRestClient<AuthService>(getBaseContext())
@@ -281,10 +293,14 @@ public class JoinPersonalActivity extends BaseActivity {
                 Log.d(TAG, response.raw().toString());
                 if (200 == response.raw().code()) {
                     // 사용 가능
-
+                    isValidCheck = true;
+                    tv_id_warn.setVisibility(View.VISIBLE);
+                    tv_id_warn.setText(getResources().getString(R.string.ss_string_146));
                 } else {
                     // 사용 불가
-
+                    isValidCheck = false;
+                    tv_id_warn.setVisibility(View.VISIBLE);
+                    tv_id_warn.setText(getResources().getString(R.string.ss_string_005));
                 }
 
                 closeSpinner();
@@ -303,69 +319,94 @@ public class JoinPersonalActivity extends BaseActivity {
     @Multipart
     private void signup() {
         showSpinner();
+
         HashMap<String, Object> query = new HashMap<>();
+
+        if (!isServiceChecked || !isPrivateChecked || !isLocationChecked) {
+            toast(getResources().getString(R.string.ss_string_145));
+            closeSpinner();
+            return;
+        }
+
+        if (!isValidCheck) {
+            toast(getResources().getString(R.string.ss_string_144));
+            closeSpinner();
+            return;
+        }
+
+        if (spinner.getSelectedItemPosition() == 0) {
+            toast(getResources().getString(R.string.ss_string_011));
+            closeSpinner();
+            return;
+        } else if (spinner.getSelectedItemPosition() == 1) {
+            query.put("gender", "male");
+        } else if (spinner.getSelectedItemPosition() == 2) {
+            query.put("gender", "femail");
+        }
+
+        if (spinner_grade.getSelectedItemPosition() == 0) {
+            toast(getResources().getString(R.string.ss_string_012));
+            closeSpinner();
+            return;
+        } else if (spinner_grade.getSelectedItemPosition() == 1) {
+            query.put("grade", "ama");
+        } else if (spinner_grade.getSelectedItemPosition() == 2) {
+            query.put("grade", "pro");
+        }
+
+        String device_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+
         query.put("deviceToken", "");
         query.put("deviceType", "A");
-
-        query.put("deviceUid", "");
-        query.put("email", "");
-        query.put("gender", "");
-        query.put("grade", "");
+        query.put("deviceUid", device_id);
+        query.put("userId", et_id.getText().toString());
+        query.put("email", "seo1108@gmail.com");
         query.put("handicap", 0);
-        query.put("name", "");
+        query.put("name", et_name.getText().toString());
+        query.put("phone", et_phone.getText().toString());
+        query.put("inviteId", et_recommend.getText().toString());
         query.put("noti", false);
         query.put("notiEmail", false);
         query.put("notiPush", false);
         query.put("notiSms", false);
         query.put("password", "");
-        query.put("phone", "");
 
         // 임시 카카오 값값
-       query.put("snsId", "1322456930");
+        query.put("snsId", "1322456930");
         query.put("snsType", "kakao");
-
-
-        query.put("userId", "");
-        //query.put("userSeq", 1);
-        //query.put("userType", "");
-
-
-
-
-        /*query.put("deviceToken", RequestBody.create(MediaType.parse("text/plain"), ""));
-        query.put("deviceType", RequestBody.create(MediaType.parse("text/plain"), "A"));
-
-        query.put("deviceUid", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("email", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("gender", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("grade", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("handicap", RequestBody.create(MediaType.parse("text/plain"), 123));
-        query.put("deviceType", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("deviceType", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("deviceType", RequestBody.create(MediaType.parse("text/plain"), "A"));
-        query.put("deviceType", RequestBody.create(MediaType.parse("text/plain"), "A"));*/
 
 
         MultipartBody.Part uploadFile = null;
         File photoFile = SaveBitmapToFileCache(bitmap);
 
         RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), photoFile);
-        uploadFile = MultipartBody.Part.createFormData("photo", photoFile.getName(), requestFile);
+        uploadFile = MultipartBody.Part.createFormData("file", photoFile.getName(), requestFile);
 
         try {
             AuthService service =
                     new DefaultRestClient<AuthService>(getBaseContext())
                             .getClient(AuthService.class);
-            Call<JsonObject> call = service.signup(uploadFile, query);
-            call.enqueue(new Callback<JsonObject>() {
+            Call<Join> call = service.signup(uploadFile, query);
+            call.enqueue(new Callback<Join>() {
                 @Override
-                public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
+                public void onResponse(Call<Join> call, Response<Join> response) {
                     LogUtils.err(TAG, response.raw().toString());
 
                     Log.d(TAG, response.raw().toString());
                     if (200 == response.raw().code()) {
-                        //회원가입 성공
+                        Join data = response.body();
 
+                        SharedPreferences prefr = getApplicationContext().getSharedPreferences("sns", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = prefr.edit();
+                        editor.putString("snsId", data.getData().getSnsId());
+                        editor.putString("snsType", data.getData().getSnsType());
+                        editor.commit();
+
+                        Log.d("SSSSSSSSSSSSSSSSSSSS", prefr.getString("snsId", ""));
+                        Log.d("SSSSSSSSSSSSSSSSSSSS", prefr.getString("snsType", ""));
+
+                        //회원가입 성공
+                        callActivity(JoinConfirmActivity.class, false);
                     } else {
 
                     }
@@ -374,7 +415,7 @@ public class JoinPersonalActivity extends BaseActivity {
                 }
 
                 @Override
-                public void onFailure(Call<JsonObject> call, Throwable t) {
+                public void onFailure(Call<Join> call, Throwable t) {
                     closeSpinner();
                     Log.d(TAG, t.toString());
                 }

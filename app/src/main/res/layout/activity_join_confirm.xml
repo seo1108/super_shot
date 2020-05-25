@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
-                    android:src="@drawable/cash"
+                    android:src="@drawable/supershot_cash"
                     android:layout_gravity="center" />
 
                 <androidx.cardview.widget.CardView
