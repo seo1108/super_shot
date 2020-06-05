@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -115,6 +116,7 @@
                                 android:background="@drawable/underline_white_1">
 
                                 <TextView
+                                    android:id="@+id/tv_amount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/ss_string_080"
@@ -141,6 +143,7 @@
                                 android:background="@drawable/underline_white_1">
 
                                 <EditText
+                                    android:id="@+id/et_9_prize"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/ss_string_081"
@@ -260,6 +263,7 @@
                                 android:background="@drawable/underline_white_1">
 
                                 <TextView
+                                    android:id="@+id/tv_per_hole_amount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/ss_string_085"
@@ -1261,6 +1265,8 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
+
+
                 <com.developer.messageview.MessageView
                     android:id="@+id/mv_double"
                     android:layout_width="229dp"
@@ -1370,9 +1376,88 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                android:elevation="6dp"
+                app:cardBackgroundColor="@color/apple"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sans_regular"
+                    android:gravity="center"
+                    android:text="@string/ss_string_067"
+                    android:textColor="@color/white_two"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
+    <LinearLayout
+        android:id="@+id/ll_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/white_top_r15"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/indicator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineHeight="24sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"
+                android:text="@string/ss_string_068"
+                android:fontFamily="@font/roboto_regular"/>
+
+        </LinearLayout>
+
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/main_wheel_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            android:lineHeight="70sp"
+            android:fontFamily="@font/roboto_regular"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="true"
+            app:wheel_cyclic="true"
+            app:wheel_item_text_color="@color/greyish"
+            app:wheel_item_text_size="23sp"
+            app:wheel_selected_item_text_color="@color/black"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/black_16"/>
+    </LinearLayout>
 </RelativeLayout>

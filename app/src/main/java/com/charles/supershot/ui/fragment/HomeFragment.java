@@ -2,6 +2,7 @@ package com.charles.supershot.ui.fragment;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,6 +69,8 @@ public class HomeFragment extends BaseFragment {
         cv_start_game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bu = new Bundle();
+                bu.putSerializable("type", 1);
                 mActivity.callActivity(GameTypeActivity.class, false);
             }
         });

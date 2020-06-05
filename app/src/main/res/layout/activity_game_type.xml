@@ -75,8 +75,9 @@
                 android:background="@drawable/apple_r17">
 
                 <TextView
+                    android:id="@+id/tv_skins"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/sans_regular"
                     android:gravity="center"
                     android:includeFontPadding="false"
@@ -97,6 +98,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/brownishgrey_r17">
                 <TextView
+                    android:id="@+id/tv_stroke"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -119,6 +121,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/brownishgrey_r17">
                 <TextView
+                    android:id="@+id/tv_match"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -141,6 +144,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/brownishgrey_r17">
                 <TextView
+                    android:id="@+id/tv_myeongrang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -184,8 +188,9 @@
                 android:paddingLeft="20dp"
                 android:layout_weight="1"
                 android:textColor="@color/brownish_grey"
+                android:textColorHint="@color/brownish_grey"
                 android:fontFamily="@font/sans_regular"
-                android:text="@string/ss_string_064"/>
+                android:hint="@string/ss_string_064" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -208,6 +213,8 @@
                 android:gravity="center"
                 android:lineHeight="24sp"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:textSize="16sp"
                 android:fontFamily="@font/sans_regular"
                 android:text="@string/ss_string_065"
@@ -220,6 +227,8 @@
                 android:gravity="center"
                 android:lineHeight="24sp"
                 android:layout_marginTop="7dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:textSize="16sp"
                 android:fontFamily="@font/sans_regular"
                 android:text="@string/ss_string_066"

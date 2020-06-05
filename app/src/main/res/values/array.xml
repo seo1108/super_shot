@@ -36,6 +36,7 @@
         <item>포볼(베스트볼)</item>>
         <item>포볼(스트로크)</item>
         <item>쓰리볼(베스트볼)</item>
+        <item>쓰리볼(스트로크)</item>
         <item>포섬</item>
         <item>쓰리섬</item>
         <item>포섬 스크램블</item>
@@ -52,5 +53,23 @@
         <item>포섬</item>
         <item>쓰리섬</item>
         <item>포섬 스크램블</item>
+    </string-array>
+
+    <string-array name="betAmount">
+        <item>2천원</item>
+        <item>4천원</item>
+        <item>만원</item>
+        <item>2만원</item>
+        <item>4만원</item>
+        <item>10만원</item>
+        <item>20만원</item>
+    </string-array>
+
+    <string-array name="scoreOption">
+        <item>스코어</item>
+        <item>페리오(합산)</item>
+        <item>신페리오(합산)</item>
+        <item>스테이블포드(합산)</item>
+        <item>신스테이블포드(합산)</item>
     </string-array>
 </resources>

@@ -164,8 +164,8 @@
     <string name="ss_string_150">명랑</string>
     <string name="ss_string_151">스트로크는 플레이어간에 실력차가 있을 경우\n핸디캡을 적용하는 게임입니다.</string>
     <string name="ss_string_152">홀별 승리방식인 경우 핸디캡 차이만큼\n미리 상금을 주고 시작합니다,</string>
-    <string name="ss_string_153"></string>
-    <string name="ss_string_154"></string>
+    <string name="ss_string_153">Skip</string>
+    <string name="ss_string_154">Next</string>
     <string name="ss_string_155"></string>
     <string name="ss_string_156"></string>
     <string name="ss_string_157"></string>
@@ -202,4 +202,73 @@
     <string name="ss_string_324">게임기록원 변경</string>
     <string name="ss_string_325">%1$s님이\n게임기록원으로 요청하셨습니다.\n받으시겠습니까?</string>
     <string name="ss_string_326">내기기록</string>
+
+    <string name="strokes_stroke">스트로크는 플레이어간에 실력차가 있을 경우 핸디캡을 적용하는 게임입니다.</string>
+    <string name="strokes_stroke_desc">홀별 승리방식인 경우 핸디캡 차이만큼 미리 상금을 주고 시작합니다.</string>
+    <string name="strokes_scratch">스크래치는 플레이어간에 실력차가 없을 경우 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="strokes_scratch_desc"></string>
+    <string name="strokes_onebest">원베스트크코어는 팀전(1:2,3)으로 다수 플레이어의 베스트 스코어와 1인의 스코어를 적용하는 게임입니다.</string>
+    <string name="strokes_onebest_desc"></string>
+    <string name="strokes_team_stroke">팀스크래치는 팀전(2:2)으로 실력차가 없는 경우 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="strokes_team_stroke_desc">홀별 승리방식인 경우 핸디캡 차이만큼 미리 상금을 주고 시작합니다.</string>
+    <string name="strokes_team_scratch">팀스크래치는 팀전(2:2)으로 실력차가 없는 경우 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="strokes_team_scratch_desc"></string>
+    <string name="strokes_random_scratch">랜덤스크래치는  홀별로 랜덤하게 팀을 만들어 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="strokes_random_scratch_desc"></string>
+    <string name="strokes_honest">어니스트존은 플레이어가 지정한 핸디캡을 기준으로 초과 또는 미달하는 점수를 계산하여 벌금을 내는 게임입니다.</string>
+    <string name="strokes_honest_desc"></string>
+
+    <string name="skins_skins">스킨스는 플레이어가 일정금액을 사전에 내놓고 홀별로 정해진 상금을 획득하는 게임입니다.</string>
+    <string name="skins_skins_desc"></string>
+    <string name="skins_jopok_skins">조폭스킨스는 이전 승리자가 보기이하의 타수를 기록할 경우 다음 승리자에게 딴돈을 상납하는 게임입니다.</string>
+    <string name="skins_jopok_skins_desc"></string>
+    <string name="skins_ggol_skins">꼴등스킨스는 홀별로 꼴등 플레이어가 벌금을 내는 게임입니다.</string>
+    <string name="skins_ggol_skins_desc"></string>
+    <string name="skins_hussein">후세인은 홀별로 지정된 후세인과 나머지 플레이어의 타수를 비교하여 상금을 획득하는 게임입니다.</string>
+    <string name="skins_hussein_desc"></string>
+    <string name="skins_lasvagas">라스베가스는 4명이상의 짝수인 경우 홀별로 1등과 4등, 2등과 3등의 타수를 비교하여 상금을 획득하는 게임입니다.</string>
+    <string name="skins_lasvagas_desc"></string>
+    <string name="skins_new_lasvagas">신라스베가스는 4명이상의 짝수인 경우 홀별로 뽑기를 통해 구성된 팀의 타수를 비교하여 상금을 획득하는 게임입니다.</string>
+    <string name="skins_new_lasvagas_desc"></string>
+    <string name="skins_against">어게인스트는 파는 0점, 보기이하는 -1점, 버디이상은 +1으로 계산하여 게임종료 시 점수가 제일 높은 플레이어가 상금을 획득하는 게임입니다.</string>
+    <string name="skins_against_desc"></string>
+    <string name="skins_nassau">낫소는 전반과 후반으로 나누어 9홀 합산 스코어가 제일 좋은 플레이어가 상금을 획득하는 게임입니다.</string>
+    <string name="skins_nassau_desc"></string>
+
+    <string name="match_fourball_best">포볼(베스트볼)은 팀전(1:1, 2:2, 3:3)으로 각자 플레이어의 볼로 경기로 홀마다 각팀의 베스트볼을 비교하는 방식의 게임입니다</string>
+    <string name="match_fourball_best_desc"></string>
+    <string name="match_fourball_stroke">포볼(스트로크)은 팀전( 2:2, 3:3)으로 각자 플레이어의 볼로 경기로 핸디캡 없이 홀마다 각팀의 베스트스코어를 적용하는 방식의 게임입니다</string>
+    <string name="match_fourball_stroke_desc"></string>
+    <string name="match_threeball_best">쓰리볼(베스트볼)은 팀전(1:2,3)으로 2명인 플레이어의 베스트볼과 1인팀의 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="match_threeball_best_desc"></string>
+    <string name="match_threeball_stroke">쓰리볼(스트로크)은 팀전(1:2,3)으로 핸디캡 없이 2명인 플레이어의 베스트스코어와 1인팀의 스코어를 적용하는 방식의 게임입니다.</string>
+    <string name="match_threeball_strole_desc"></string>
+    <string name="match_foursome">포섬은 팀전(2:2, 3:3)으로 각팀은 한개의 볼로 교대하는 경기로 홀마다 좋은 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="match_foursome_desc"></string>
+    <string name="match_threesome">쓰리섬은 팀전(1:2, 3)으로 2명인 팀은 한 개의 볼로 교대하는 경기로 홀마다 좋은 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="match_threesome_desc"></string>
+    <string name="match_foursome_scramble">포섬스크램블은 팀전(2:2, 3:3)으로 각자 플레이어의 친 볼 중 좋은 볼을 선택하여 팀의 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="match_foursome_scramble_desc"></string>
+
+    <string name="myeong_stroke">스트로크는 플레이어간에 실력차가 있을 경우 핸디캡을 적용하는 게임입니다.</string>
+    <string name="myeong_stroke_desc"></string>
+    <string name="myeong_scratch">스크래치는 플레이어간에 실력차가 없을 경우 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="myeong_scratch_desc"></string>
+    <string name="myeong_team_stroke">팀스트로크는 팀전(2:2)으로 실력차가 있을 경우 핸디캡을 적용하는 게임입니다.</string>
+    <string name="myeong_team_stroke_desc"></string>
+    <string name="myeong_team_scratch">팀스크래치는 팀전(2:2)으로 실력차가 없는 경우 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="myeong_team_scratch_desc"></string>
+    <string name="myeong_random_scratch">랜덤스크래치는  홀별로 랜덤하게 팀을 만들어 핸디캡을 적용하지 않는 게임입니다.</string>
+    <string name="myeong_random_scratch_desc"></string>
+    <string name="myeong_fourball_best">포볼(베스트볼)은 팀전(1:1, 2:2, 3:3)으로 각자 플레이어의 볼로 경기로 홀마다 각팀의 베스트볼을 비교하는 방식의 게임입니다.</string>
+    <string name="myeong_fourball_best_desc"></string>
+    <string name="myeong_threeball_best">쓰리볼(베스트볼)은 팀전(1:2,3)으로 2명인 플레이어의 베스트볼과 1인팀의 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="myeong_threeball_best_desc"></string>
+    <string name="myeong_foursome">포섬은 팀전(2:2, 3:3)으로 각팀은 한개의 볼로 교대하는 경기로 홀마다 좋은 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="myeong_foursome_desc"></string>
+    <string name="myeong_threesome">쓰리섬은 팀전(1:2, 3)으로 2명인 팀은 한 개의 볼로 교대하는 경기로 홀마다 좋은 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="myeong_threesome_desc"></string>
+    <string name="myeong_foursome_scramble">포섬스크램블은 팀전(2:2, 3:3)으로 각자 플레이어의 친 볼 중 좋은 볼을 선택하여 팀의 스코어를 비교하는 방식의 게임입니다.</string>
+    <string name="myeong_foursome_scramble_desc"></string>
+
 </resources>
