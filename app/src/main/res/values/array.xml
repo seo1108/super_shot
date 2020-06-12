@@ -72,4 +72,16 @@
         <item>스테이블포드(합산)</item>
         <item>신스테이블포드(합산)</item>
     </string-array>
+
+    <string-array name="oecdCondition">
+        <item>1홀 이상 승리</item>
+        <item>2홀 이상 승리</item>
+        <item>3홀 이상 승리</item>
+        <item>4홀 이상 승리</item>
+        <item>5홀 이상 승리</item>
+        <item>6홀 이상 승리</item>
+        <item>7홀 이상 승리</item>
+        <item>8홀 이상 승리</item>
+        <item>9홀 이상 승리</item>
+    </string-array>
 </resources>

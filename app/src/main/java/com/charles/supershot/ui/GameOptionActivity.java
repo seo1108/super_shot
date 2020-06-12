@@ -285,6 +285,9 @@ public class GameOptionActivity extends BaseActivity implements WheelPicker.OnIt
     private String[] mScoreArray;
     private List<String> mScoreArr;
 
+    private String[] mOecdArray;
+    private List<String> mOecdArr;
+
     private String mSelectedAmount = "";
     private String mSelectedSocre = "";
 
@@ -316,6 +319,13 @@ public class GameOptionActivity extends BaseActivity implements WheelPicker.OnIt
 
         for (int idx = 0; idx < mScoreArray.length; idx++) {
             mScoreArr.add(mScoreArray[idx]);
+        }
+
+        mOecdArray = getResources().getStringArray(R.array.oecdCondition);
+        mOecdArr = new ArrayList<>();
+
+        for (int idx = 0; idx < mOecdArray.length; idx++) {
+            mOecdArr.add(mOecdArray[idx]);
         }
 
         ll_wheel.setVisibility(View.GONE);
