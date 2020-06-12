@@ -75,6 +75,21 @@ public class SplashActivity extends BaseActivity {
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("sns", MODE_PRIVATE);
 
+        /************************
+         *
+         * 임시
+         *
+         ***********************/
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("snsId", "1322456930");
+        editor.putString("snsType", "kakao");
+        editor.commit();
+        /************************
+         *
+         * 임시
+         *
+        ***********************/
+
         if ("".equals(pref.getString("snsId", ""))) {
             callActivity(JoinPersonalActivity.class, true);
             return;

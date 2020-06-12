@@ -166,9 +166,9 @@
     <string name="ss_string_152">홀별 승리방식인 경우 핸디캡 차이만큼\n미리 상금을 주고 시작합니다,</string>
     <string name="ss_string_153">Skip</string>
     <string name="ss_string_154">Next</string>
-    <string name="ss_string_155"></string>
-    <string name="ss_string_156"></string>
-    <string name="ss_string_157"></string>
+    <string name="ss_string_155">홀당(승리)</string>
+    <string name="ss_string_156">18홀(타수)</string>
+    <string name="ss_string_157">18홀합산</string>
     <string name="ss_string_158"></string>
     <string name="ss_string_159"></string>
     <string name="ss_string_160"></string>

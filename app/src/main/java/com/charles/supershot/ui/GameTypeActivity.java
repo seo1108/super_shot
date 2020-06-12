@@ -78,6 +78,8 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
     @BindView(R.id.iv_back)
     ImageView iv_back;
 
+    private List<String> mEmptyArr = new ArrayList<>();
+
     private String[] mGameArray;
     private List<String> mArr;
 
@@ -242,16 +244,14 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
                 break;
 
         }
-
+        Log.d("SSSSSSSSSSSSS", "selected " + String.valueOf(data));
         mSelectedText = String.valueOf(data);
 
         setDescription();
     }
 
     private void setUI(int type) {
-        Typeface typeface = ResourcesCompat.getFont(mActivity, R.font.roboto_regular);
-        float spTextSize = 20;
-        float textSize = spTextSize * getResources().getDisplayMetrics().scaledDensity;
+        initWheel();
 
         tv_skins.setTextColor(getResources().getColor(R.color.brownish_grey));
         ll_skins.setBackground(getResources().getDrawable(R.drawable.brownishgrey_r17));
@@ -268,13 +268,16 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
         tv_game_type.setText("");
         //mSelectedText = "";
 
+        Log.d("SSSSSSSSSSSSSSSSS", main_wheel_center.getCurrentItemPosition() + " 1");
         if (1 == type)
         {
             tv_skins.setTextColor(getResources().getColor(R.color.apple));
             ll_skins.setBackground(getResources().getDrawable(R.drawable.apple_r17));
 
             main_wheel_center.setData(mSkinsArr);
+            main_wheel_center.setSelectedItemPosition(0);
             mSelectedGameType = "skins";
+            mSelectedText = mSkinsArray[main_wheel_center.getCurrentItemPosition()];
         }
         else if (2 == type)
         {
@@ -282,8 +285,9 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
             ll_stroke.setBackground(getResources().getDrawable(R.drawable.apple_r17));
 
             main_wheel_center.setData(mStrokeArr);
-
+            main_wheel_center.setSelectedItemPosition(0);
             mSelectedGameType = "stroke";
+            mSelectedText = mStrokeArray[main_wheel_center.getCurrentItemPosition()];
         }
         else if (3 == type)
         {
@@ -291,8 +295,9 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
             ll_match.setBackground(getResources().getDrawable(R.drawable.apple_r17));
 
             main_wheel_center.setData(mMatchArr);
-
+            main_wheel_center.setSelectedItemPosition(0);
             mSelectedGameType = "match";
+            mSelectedText = mMatchArray[main_wheel_center.getCurrentItemPosition()];
         }
         else if (4 == type)
         {
@@ -300,13 +305,14 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
             ll_myeongrang.setBackground(getResources().getDrawable(R.drawable.apple_r17));
 
             main_wheel_center.setData(mMyeongArr);
-
+            main_wheel_center.setSelectedItemPosition(0);
             mSelectedGameType = "myeongrang";
+            mSelectedText = mMyeongArray[main_wheel_center.getCurrentItemPosition()];
         }
 
-        main_wheel_center.setItemSpace(50);
-        main_wheel_center.setTypeface(typeface);
-        main_wheel_center.setOnItemSelectedListener(this);
+
+
+        setDescription();
 
         /*cv_next.setVisibility(View.GONE);
         ll_wheel.setVisibility(View.VISIBLE);
@@ -582,6 +588,19 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
                 mSelectedGameSubType = "foursome_scramble";
             }
         }
+    }
+
+    private void initWheel() {
+        Typeface typeface = ResourcesCompat.getFont(mActivity, R.font.roboto_regular);
+        float spTextSize = 20;
+        float textSize = spTextSize * getResources().getDisplayMetrics().scaledDensity;
+
+        main_wheel_center = new WheelPicker(getApplicationContext());
+        main_wheel_center = (WheelPicker) findViewById(R.id.main_wheel_center);
+        main_wheel_center.setSelectedItemPosition(0);
+        main_wheel_center.setItemSpace(70);
+        main_wheel_center.setTypeface(typeface);
+        main_wheel_center.setOnItemSelectedListener(this);
     }
 
 }
