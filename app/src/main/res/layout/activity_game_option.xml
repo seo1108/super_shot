@@ -91,6 +91,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -124,6 +125,33 @@
                                     android:text="@string/ss_string_155" />
                             </LinearLayout>
 
+                            <LinearLayout
+                                android:id="@+id/ll_amount_option"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:paddingTop="18dp"
+                                android:paddingBottom="11dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/underline_white_1"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/tv_amount_option"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ss_string_080"
+                                    android:layout_weight="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/light_grey_blue"
+                                    android:fontFamily="@font/sans_regular"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/arrow_down" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll_amount"
@@ -140,11 +168,11 @@
                                     android:id="@+id/tv_amount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/ss_string_080"
                                     android:layout_weight="1"
-                                    android:textSize="14sp"
+                                    android:fontFamily="@font/sans_regular"
+                                    android:text="@string/ss_string_080"
                                     android:textColor="@color/light_grey_blue"
-                                    android:fontFamily="@font/sans_regular"/>
+                                    android:textSize="14sp" />
 
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -204,11 +232,13 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:fontFamily="@font/sans_regular"
+                                    android:inputType="number"
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:singleLine="true"
-                                    android:text="@string/ss_string_082"
+                                    android:hint="@string/ss_string_082"
                                     android:textColor="@color/light_grey_blue"
+                                    android:textColorHint="@color/light_grey_blue"
                                     android:textSize="14sp" />
 
                                 <TextView
@@ -235,11 +265,11 @@
                                     android:id="@+id/tv_diff_hole_amount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/ss_string_083"
                                     android:layout_weight="1"
-                                    android:textSize="14sp"
+                                    android:fontFamily="@font/sans_regular"
+                                    android:text="@string/ss_string_083"
                                     android:textColor="@color/light_grey_blue"
-                                    android:fontFamily="@font/sans_regular"/>
+                                    android:textSize="14sp" />
 
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -280,7 +310,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="20dp"
-                                android:layout_marginBottom="24dp"
+                                android:layout_marginBottom="14dp"
                                 android:paddingTop="18dp"
                                 android:paddingBottom="11dp"
                                 android:orientation="horizontal"
@@ -290,11 +320,11 @@
                                     android:id="@+id/tv_per_hole_amount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/ss_string_085"
                                     android:layout_weight="1"
-                                    android:textSize="14sp"
+                                    android:fontFamily="@font/sans_regular"
+                                    android:text="@string/ss_string_085"
                                     android:textColor="@color/light_grey_blue"
-                                    android:fontFamily="@font/sans_regular"/>
+                                    android:textSize="14sp" />
 
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -359,6 +389,7 @@
                                 android:background="@drawable/underline_white_1">
 
                                 <TextView
+                                    android:id="@+id/tv_score_calc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/ss_string_087"
@@ -920,19 +951,21 @@
 
                                         <ImageView
                                             android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
+                                            android:layout_height="match_parent"
                                             android:layout_marginTop="3dp"
                                             android:src="@drawable/arrow_down" />
+
                                         <TextView
+                                            android:id="@+id/tv_oecd_condition"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
-                                            android:paddingLeft="5dp"
-                                            android:textSize="16sp"
                                             android:layout_weight="1"
                                             android:fontFamily="@font/sans_regular"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/ss_string_102"
                                             android:textColor="@color/black"
-                                            android:text="@string/ss_string_102" />
+                                            android:textSize="16sp" />
                                     </LinearLayout>
 
                                 </LinearLayout>
@@ -1494,8 +1527,6 @@
                 android:fontFamily="@font/roboto_regular"/>
 
         </LinearLayout>
-
-
         <com.aigestudio.wheelpicker.WheelPicker
             android:id="@+id/main_wheel_center"
             android:layout_width="match_parent"
@@ -1514,4 +1545,6 @@
             app:wheel_indicator="true"
             app:wheel_indicator_color="@color/black_16"/>
     </LinearLayout>
+
+
 </RelativeLayout>

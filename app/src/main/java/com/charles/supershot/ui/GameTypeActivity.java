@@ -244,7 +244,7 @@ public class GameTypeActivity extends BaseActivity implements WheelPicker.OnItem
                 break;
 
         }
-        Log.d("SSSSSSSSSSSSS", "selected " + String.valueOf(data));
+
         mSelectedText = String.valueOf(data);
 
         setDescription();
