@@ -616,7 +616,7 @@ public class GameOptionActivity extends BaseActivity implements WheelPicker.OnIt
         tv_done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("SSSSSSSS", mSelectedWheelType + "_____________");
+
                 if ("per_hole_amount".equals(mSelectedWheelType)) {
                     tv_per_hole_amount.setText(mSelectedAmount);
                 } else if ("diff_hole_amount".equals(mSelectedWheelType)) {

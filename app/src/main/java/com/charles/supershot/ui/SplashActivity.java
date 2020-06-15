@@ -114,12 +114,17 @@ public class SplashActivity extends BaseActivity {
                     UserData data = response.body();
                     Log.d("SSSSSSSSSSSSSSSSSSSS", data.getStatusCode() + "__" + data.getMessage());
                     Log.d("SSSSSSSSSSSSSSSSSSSS", data.getData().getUser().getGender());
+                    Log.d("SSSSSSSSSSSSSSSSSSSS", data.getData().getUser().getUserId());
+                    Log.d("SSSSSSSSSSSSSSSSSSSS", data.getData().getUser().getUserSeq());
                     Log.d("SSSSSSSSSSSSSSSSSSSS", data.getData().getToken());
 
                     SharedPreferences prefr = getApplicationContext().getSharedPreferences("token", MODE_PRIVATE);
                     SharedPreferences.Editor editor = prefr.edit();
                     editor.putString("token", data.getData().getToken());
+                    editor.putString("userSeq", data.getData().getUser().getUserSeq());
                     editor.commit();
+
+                    Log.d("TOKEN", data.getData().getToken());
 
                     callActivity(GameTypeActivity.class, true);
 

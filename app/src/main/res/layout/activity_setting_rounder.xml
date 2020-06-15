@@ -78,7 +78,7 @@
                     android:fontFamily="@font/sans_regular"/>
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
@@ -92,7 +92,13 @@
                     tools:listitem="@layout/row_rounder" />
 
 
-            </LinearLayout>
+            </LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/rounder_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical" />
 
             <ImageView
                 android:layout_width="match_parent"
