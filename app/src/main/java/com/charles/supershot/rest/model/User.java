@@ -25,6 +25,7 @@ public class User {
     private boolean notiEmail;
     private boolean notiSms;
     private boolean notiPush;
+    private boolean delete;
 
     public String getUserSeq() {
         return userSeq;
@@ -216,5 +217,13 @@ public class User {
 
     public void setNotiPush(boolean notiPush) {
         this.notiPush = notiPush;
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 }

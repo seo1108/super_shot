@@ -169,13 +169,13 @@
     <string name="ss_string_155">홀당(승리)</string>
     <string name="ss_string_156">18홀(타수)</string>
     <string name="ss_string_157">18홀합산</string>
-    <string name="ss_string_158"></string>
+    <string name="ss_string_158">선택되어 있는 친구입니다.</string>
     <string name="ss_string_159"></string>
     <string name="ss_string_160"></string>
 
 
 
-    <string name="ss_string_300">핸디캡 %1$s</string>
+    <string name="ss_string_300">핸디캡</string>
     <string name="ss_string_301">최신스코어</string>
     <string name="ss_string_302">동반라운더</string>
     <string name="ss_string_303">+ 선수 추가</string>
