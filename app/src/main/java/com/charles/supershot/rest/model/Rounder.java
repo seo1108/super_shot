@@ -7,8 +7,9 @@ public class Rounder implements Parcelable {
     private int userSeq;
     private String profileImage;
     private String userName;
-    private int handycap;
+    private int handicap;
     private int recentTotalScore;
+    private String phoneNumber;
 
     public Rounder() {
     }
@@ -17,8 +18,9 @@ public class Rounder implements Parcelable {
         userSeq = in.readInt();
         profileImage = in.readString();
         userName = in.readString();
-        handycap = in.readInt();
+        handicap = in.readInt();
         recentTotalScore = in.readInt();
+        phoneNumber = in.readString();
     }
 
     public static final Creator<Rounder> CREATOR = new Creator<Rounder>() {
@@ -43,8 +45,9 @@ public class Rounder implements Parcelable {
         dest.writeInt(userSeq);
         dest.writeString(profileImage);
         dest.writeString(userName);
-        dest.writeInt(handycap);
+        dest.writeInt(handicap);
         dest.writeInt(recentTotalScore);
+        dest.writeString(phoneNumber);
     }
 
     public int getUserSeq() {
@@ -71,12 +74,12 @@ public class Rounder implements Parcelable {
         this.userName = userName;
     }
 
-    public int getHandycap() {
-        return handycap;
+    public int getHandicap() {
+        return handicap;
     }
 
-    public void setHandycap(int handycap) {
-        this.handycap = handycap;
+    public void setHandycap(int handicap) {
+        this.handicap = handicap;
     }
 
     public int getRecentTotalScore() {
@@ -85,5 +88,13 @@ public class Rounder implements Parcelable {
 
     public void setRecentTotalScore(int recentTotalScore) {
         this.recentTotalScore = recentTotalScore;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

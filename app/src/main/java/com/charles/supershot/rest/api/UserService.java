@@ -1,6 +1,7 @@
 package com.charles.supershot.rest.api;
 
 import com.charles.supershot.rest.model.AddFriend;
+import com.charles.supershot.rest.model.FriendAddResult;
 import com.charles.supershot.rest.model.UserInfo;
 
 import java.util.Map;
@@ -8,6 +9,7 @@ import java.util.Map;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
 
@@ -30,6 +32,17 @@ public interface UserService {
      */
     @GET("friends")
     Call<AddFriend> friendList(
+            @Header("Authorization") String authorization
+            ,@QueryMap Map<String, Object> reqData
+    );
+
+    /**
+     *
+     * 친구 추가
+     *
+     */
+    @POST("friend")
+    Call<FriendAddResult> addfriend(
             @Header("Authorization") String authorization
             ,@QueryMap Map<String, Object> reqData
     );

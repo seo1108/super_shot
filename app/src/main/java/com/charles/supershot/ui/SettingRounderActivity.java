@@ -24,6 +24,7 @@ import com.charles.supershot.ui.adapter.RowRounder;
 import com.charles.supershot.utils.LogUtils;
 
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -42,6 +43,8 @@ public class SettingRounderActivity extends BaseActivity {
 
     @BindView(R.id.recycler_view)
     RecyclerView recycler_view;
+
+    private Adapter mAdapter;
 
     private int REQUEST_RESULT = 3000;
 
@@ -66,11 +69,16 @@ public class SettingRounderActivity extends BaseActivity {
     protected void attachEvents() {
     }
 
+    @OnClick(R.id.iv_back)
+    void onClickBack() {
+        finish();
+    }
+
     @OnClick(R.id.ll_add_rounder)
     void onClickAddRounder() {
         Intent intent = new Intent(getApplicationContext(), AddRounderActivity.class);
         startActivityForResult(intent, REQUEST_RESULT);
-        callActivity(AddRounderActivity.class, false);
+        //callActivity(AddRounderActivity.class, false);
     }
 
     @Override
@@ -78,6 +86,18 @@ public class SettingRounderActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             List<Rounder> list = data.getParcelableArrayListExtra("rounders");
+
+            if (null != list && list.size() > 0) {
+                mAdapter = new Adapter(getApplicationContext(), list);
+                recycler_view.setAdapter(mAdapter);
+                recycler_view.setNestedScrollingEnabled(false);
+                recycler_view.setLayoutManager(
+                        new LinearLayoutManager(getApplicationContext(),
+                                LinearLayoutManager.VERTICAL, false));
+            }
+            /*for(int i = 0; i < list.size(); i++) {
+                Log.d("SSSSSSSSSSS", list.get(i).getUserName());
+            }*/
         }
     }
 
@@ -139,24 +159,24 @@ public class SettingRounderActivity extends BaseActivity {
 
     class Adapter extends RecyclerView.Adapter<Adapter.Holder> {
         private Context context;
-        private List<FriendInfo> list;
+        private List<Rounder> list;
         private LayoutInflater inflater;
         private ItemClickListener itemClickListener;
         private int selectedKey = -1;
 
-        Adapter(Context context){
+        Adapter(Context context, List<Rounder> list){
             this.context = context;
             inflater = LayoutInflater.from(context);
-            list = new ArrayList<>();
+            this.list = list;
         }
 
-        public void add(FriendInfo item) {
+        public void add(Rounder item) {
             list.add(item);
             notifyItemInserted(list.size() - 1);
         }
 
-        public void addAll(List<FriendInfo> list) {
-            for (FriendInfo item : list) {
+        public void addAll(List<Rounder> list) {
+            for (Rounder item : list) {
                 add(item);
             }
         }
@@ -170,7 +190,7 @@ public class SettingRounderActivity extends BaseActivity {
 
         @Override
         public void onBindViewHolder(Adapter.Holder holder, int position) {
-            FriendInfo item = getItem(position);
+            Rounder item = getItem(position);
 
             /**
              * CardView row;
@@ -188,9 +208,9 @@ public class SettingRounderActivity extends BaseActivity {
                     .fitCenter()
                     .into(holder.iv_profile);
 
-            holder.tv_name.setText(item.getName());
+            holder.tv_name.setText(item.getUserName());
             holder.tv_name_desc.setText(getResources().getString(R.string.ss_string_300) + " " + item.getHandicap());
-            holder.tv_score_number.setText(item.getRecentTotalScore() + "");
+            holder.tv_score_number.setText(String.valueOf(item.getRecentTotalScore()));
 
 
             /*holder.row.setOnClickListener(v->{
@@ -203,7 +223,7 @@ public class SettingRounderActivity extends BaseActivity {
             return list.size();
         }
 
-        public FriendInfo getItem(int id) {
+        public Rounder getItem(int id) {
             return list.get(id);
         }
 
@@ -237,6 +257,7 @@ public class SettingRounderActivity extends BaseActivity {
                 tv_name = itemView.findViewById(R.id.tv_name);
                 tv_name_desc = itemView.findViewById(R.id.tv_name_desc);
                 ll_handy = itemView.findViewById(R.id.ll_handy);
+                tv_score_number = itemView.findViewById(R.id.tv_score_number);
                 tv_score_desc = itemView.findViewById(R.id.tv_score_desc);
             }
 
